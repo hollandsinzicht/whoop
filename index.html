@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — WHOOP MCP (Personal)</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e4e4e4;
+    --accent: #0b8a5a;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161a;
+      --fg: #e7e9ec;
+      --muted: #9aa0a8;
+      --rule: #2a2e35;
+      --accent: #34c98b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161a;
+    --fg: #e7e9ec;
+    --muted: #9aa0a8;
+    --rule: #2a2e35;
+    --accent: #34c98b;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 3rem 1.25rem 4rem;
+  }
+  header { margin-bottom: 2.25rem; }
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.25;
+    margin: 0 0 0.35rem;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.2rem 0 0.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    letter-spacing: -0.005em;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0.6rem 0; }
+  ul { margin: 0.6rem 0; padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+  .note {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: color-mix(in srgb, var(--fg) 8%, transparent);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy — WHOOP MCP (Personal)</h1>
+    <p class="sub">Last updated: 16 September 2026</p>
+  </header>
+
+  <h2>1. Overview</h2>
+  <p>
+    This privacy policy describes how a private, self-hosted software integration
+    (the “Application”) accesses and handles data from the WHOOP API. The Application
+    is a personal, non-commercial tool operated by a single individual for their own use.
+    It is not offered to, or used by, any other person.
+  </p>
+  <p>
+    <strong>Operator / data controller:</strong> Jan Willem den Hollander<br>
+    <strong>Contact:</strong> <a href="mailto:jwdenhollander@gmail.com">jwdenhollander@gmail.com</a><br>
+    <strong>Location:</strong> The Netherlands (EU)
+  </p>
+
+  <h2>2. What the Application does</h2>
+  <p>
+    The Application runs locally on the operator's own device. It connects the operator's
+    personal WHOOP account to a locally running assistant via the Model Context Protocol
+    (MCP), so the operator can query and analyse their own health and fitness data.
+    There is no server, hosted service, or shared infrastructure that other users interact with.
+  </p>
+
+  <h2>3. Data accessed</h2>
+  <p>
+    With the operator's explicit authorisation (via WHOOP OAuth 2.0), the Application may
+    read the following categories of the operator's own WHOOP data:
+  </p>
+  <ul>
+    <li>Profile information (name, email associated with the WHOOP account)</li>
+    <li>Body measurements (height, weight, max heart rate)</li>
+    <li>Recovery data (recovery score, HRV, resting heart rate, and related metrics)</li>
+    <li>Physiological cycles (strain and heart-rate metrics)</li>
+    <li>Sleep data (duration, stages, efficiency, performance)</li>
+    <li>Workout data (strain, heart-rate zones, duration, and related metrics)</li>
+  </ul>
+  <p>The Application only accesses the data of the account holder who authorises it.</p>
+
+  <h2>4. How data is used</h2>
+  <p>
+    Data is used solely to let the operator view and analyse their own health and fitness
+    information locally. Data is not used for advertising, profiling of others, marketing,
+    or any commercial purpose.
+  </p>
+
+  <h2>5. Storage and security</h2>
+  <ul>
+    <li>All data and OAuth tokens are stored locally on the operator's own device.</li>
+    <li>Communication with the WHOOP API takes place over encrypted HTTPS connections.</li>
+    <li>No data is transmitted to, or hosted on, any external server operated by the Application.</li>
+  </ul>
+
+  <h2>6. Data sharing</h2>
+  <p>
+    <strong>No data is shared with any third party.</strong> The Application does not sell,
+    transfer, or disclose WHOOP data to anyone. Data remains on the operator's device and
+    is only exchanged directly between that device and WHOOP's own API.
+  </p>
+
+  <h2>7. Data retention and revocation</h2>
+  <p>
+    Locally stored data is retained only for as long as the operator chooses to keep it and
+    can be deleted at any time by removing it from the device. The operator can revoke the
+    Application's access to their WHOOP account at any time through their WHOOP account
+    settings or the WHOOP developer dashboard, which invalidates the associated access and
+    refresh tokens.
+  </p>
+
+  <h2>8. Children</h2>
+  <p>
+    The Application is used only by its adult operator and is not directed at, or intended
+    for, children.
+  </p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>
+    This policy may be updated from time to time. The “last updated” date at the top of the
+    page reflects the most recent revision.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    Questions about this policy can be directed to
+    <a href="mailto:jwdenhollander@gmail.com">jwdenhollander@gmail.com</a>.
+  </p>
+
+  <p class="note">
+    This document describes a private, single-user integration built on the WHOOP API. It is
+    not affiliated with, endorsed by, or sponsored by WHOOP. “WHOOP” is a trademark of
+    Whoop, Inc.
+  </p>
+</main>
+</body>
+</html>
